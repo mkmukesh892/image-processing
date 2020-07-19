@@ -3,22 +3,22 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently -kill-others \"npm run mock:server\" \"npm run start:proxy\" ",
+    "start": "concurrently -kill-others \"node server.js\" \"npm run mock:server\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "mock:server": "json-server --watch api/pics.json",
     "start:proxy": "ng serve --proxy-config proxy.conf.json",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --proxy-config proxy.conf.json --aot --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
     "@angular/cdk": "~8.2.3",
+    "@angular/cli": "~8.3.25",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
-    "@angular/cli": "~8.3.25",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/core": "~8.2.14",
     "@angular/flex-layout": "~8.0.0-beta.27",
@@ -27,12 +27,14 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "bootstrap": "^3.4.1",
+    "express": "^4.17.1",
     "json-server": "^0.16.1",
     "ngx-pagination": "^5.0.0",
+    "path": "^0.12.7",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.22",
