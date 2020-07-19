@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. in your system node.js should be installed
 2. angular/cli should be installed globally as well as make sure npm is already present
 
-#Challenges
+# Challenges
 1. Setting canvas to 9:16 aspect ratio
 2. Drawing image on canvas and make to insure first image always cover the whole canvas
 3. subsequent image should be place where you drag on the canvas
