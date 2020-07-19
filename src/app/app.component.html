@@ -28,7 +28,7 @@
     <ul fxLayout="row wrap" fxLayoutAlign="space-between center">
       <li fxFlex="45%" style="margin: auto;"  *ngFor="let pic of pics| paginate: { itemsPerPage: 4, currentPage: p }">
         <img [id]="pic.id"
-          [src]="pic.download_url" draggable="true" (dragstart)="onDrag($event)">
+          [src]="pic.download_url" draggable="true" (dragstart)="onDrag($event)" crossorigin="anonymous">
       </li>
      
     </ul>
