@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#canvas {
+  border: 1px solid #ccc;
+  border: radius 20px;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+img {
+  width: 250px;
+  height: 250px;
+}
+
+#main {
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+}
+
+#mainTop {
+  // display: flex;
+  // justify-content: space-evenly;
+}
+
+
+#tag {
+  margin: 0px;
+}
