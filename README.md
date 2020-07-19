@@ -4,7 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # To Run
 1. run the command: npm install to install all the dependencies
-2. run the command :  npm start to run the application
+2. run the command: ng build --aot --prod
+3. run the command :  npm start to run the application
 
 # Prerequities
 1. in your system node.js should be installed
