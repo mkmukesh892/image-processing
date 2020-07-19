@@ -6,7 +6,7 @@ const app = express();
 const server = jsonServer.create();
 const router = jsonServer.router('api/pics.json');
 const middlewares = jsonServer.defaults();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 server.use(middlewares);
 server.use(router);
