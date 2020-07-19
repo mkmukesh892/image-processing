@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "mock:server": "json-server --watch api/pics.json",
     "start:proxy": "ng serve --proxy-config proxy.conf.json",
-    "heroku-postbuild": "ng build --proxy-config proxy.conf.json --aot --prod"
+    "heroku-postbuild": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
